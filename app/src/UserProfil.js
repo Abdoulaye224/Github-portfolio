@@ -9,9 +9,12 @@ const UserProfil = ({ username,github,checked }) => (
             <div id="bg" style={{ backgroundPosition: "center center"}}>
             <img src={username.avatar_url}/>
             </div>
-            <div id="username">
-                {username.name} <br/>
+            <div id="username" style={{color: "white"}}>
+                {username.name}<br/>
                 <a href={username.html_url}>   @{username.login} </a><br />
+                {username.public_repos} publics repos <br />
+                {username.followers} followers <br />
+                {username.following} following <br />
             </div>
 
         </div>
